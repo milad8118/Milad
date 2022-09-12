@@ -5,9 +5,10 @@
     src: url(../fonts/Raleway-font/Raleway-Regular.ttf);
 }
 
-* {
+* ,*::after,*::before{
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -74,14 +75,17 @@ a {
 
 header {
     padding: 1rem 0;
-    /* height: 45rem; */
+    height: 100vh;
     background-image: url(../img/dark_tint.png), url(../img/bokeh_car_lights_bg.jpg);
     background-position: center center;
     background-size: cover;
+
 }
 
 .top-menu {
     padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .transit-top {
@@ -96,13 +100,14 @@ header {
 
 .top-menu-nav {
     text-align: right;
-
-
+    width: 40vw;
 }
-
+.top-menu-links{
+    display: flex;
+flex-direction: column;
+}
 .top-menu-nav>ul>li {
     list-style-type: none;
-    display: inline;
     padding: 0 1rem
 }
 
@@ -110,7 +115,7 @@ header {
     color: rgba(255, 255, 255, 0.5);
     transition: color 0.2s ease-in-out;
     padding: 1rem 0.7rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
 
 }
 
@@ -126,7 +131,7 @@ header {
 .banner-content {
     text-align: center;
     color: white;
-    padding: 12.2rem 0;
+    /* padding: 12.2rem 0; */
 }
 
 .banner-content h2 {
@@ -145,25 +150,36 @@ header {
     border-radius: 8rem;
 
 }
-
-@media screen and (max-width:590px) {
-    .top-menu-nav ul li {
-        display: block;
-        padding: 1rem 0.5rem;
-    }
-
-    .banner-content {
-        padding: 7rem 0;
-    }
+.banner__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
 
+    .top-menu-nav ul li {
+        display: inline-block;
+        padding: 1rem 0;
+        width: 100%;
+    }
+    .banner__container {
+justify-content: center;
+    }
 /* services / first part */
 .services {
+    height: auto;
     background-color: #f5f5f5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
     padding: 3.8rem;
     text-align: center;
+}
+
+@media only  screen and (min-width:992px){
+    .services{
+        height: 100vh;
+    }
 }
 
 .services-header h2 {
@@ -206,16 +222,18 @@ header {
 
 .services-content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .services-content div {
     background-color: white;
-    /* width: calc(calc(100% / 3) -42px); */
+
     width: 350px;
     height: 450px;
-    margin: 0 40px;
+
     border: 1px solid rgba(144, 144, 144, 0.25);
 
 }
@@ -237,21 +255,28 @@ header {
 
 }
 
-@media screen and (max-width:1000px) {
-    .services-content {
-        display: block;
-    }
+@media screen and (min-width:768px) {
 
     .services-content div {
-        /* flex-wrap: wrap; */
-        height: 300px !important;
-        width: 100%;
         padding: 20px 0;
         margin: 30px 0;
     }
+
+}
+@media screen and (min-width:992px) {
+.services-content{
+    flex-direction: row;
+}
+.top-menu-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 }
 
 .about {
+    height: 100vh;
     text-align: center;
     background-color: #f7fbff;
     padding: 90px 0;
@@ -364,32 +389,40 @@ header {
 .contact-content {
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
-
+.contact__information{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 input[type='text'],
 input[type="email"] {
-    width: 24%;
+    width: 20vw;
     color: #444;
     margin: 0 10px;
     border-radius: 3px;
     border-style: none;
     padding: 15px 10px;
     outline: none;
-    /* height: 4vh;
-    margin: 15px 20px;
- */
+    height: auto;
 }
 
 textarea {
     color: #444;
     outline: none;
-    width: 50%;
+    width: 42vw;
     height: 28vh;
     border-style: none;
     border-radius: 4px;
     margin: 15px 20px;
     padding: 5px 30px;
     padding-left: 10px !important;
+    resize: none;
 
 }
 
@@ -398,10 +431,7 @@ textarea {
 
 }
 
-textarea:focus,
-input:focus {
-    border: 3px solid #800080;
-}
+
 
 /* footer */
 footer {
