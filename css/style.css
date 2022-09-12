@@ -448,7 +448,7 @@ footer ul li {
     cursor: pointer;
 }
 
-footer ul li:hover{
+footer ul li:hover{ 
     color: darkgoldenrod;
 }
 
