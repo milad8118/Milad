@@ -455,13 +455,13 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 
 input[type="text"],
 input[type="email"] {
-    width: 100%;
+    width: 80%;
     color: #444;
     margin: 10px 0;
     border-radius: 3px;
