@@ -79,6 +79,26 @@ a {
     padding: 1rem 3rem;
 }
 
+.transition
+{
+	transition:all .3s ease-in-out
+}
+
+.move{
+display: inline-block;
+    animation: logo-move 1.5s infinite;
+}
+@keyframes logo-move {
+    0% {
+        transform: translateY(2px);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(2px);
+    }
+}
 header {
     padding: 1rem 0;
     height: 100vh;
@@ -118,7 +138,7 @@ header {
     flex-direction: column;
 }
 
-.top-menu-nav>ul>li {
+.top-menu-nav > ul > li {
     list-style-type: none;
     padding: 0 1rem;
 }
@@ -146,7 +166,9 @@ header {
 
 .banner-content h2 {
     font-size: 4rem;
+
 }
+
 
 .banner-content p {
     font-size: 1.5rem;
@@ -181,9 +203,9 @@ header {
 .services {
     height: auto;
     background: url(../img/blob-scene-haikei.svg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
     padding: 3.8rem;
@@ -296,11 +318,9 @@ background-position: center center;
     height: auto;
     width: 100%;
     text-align: center;
-    background:#f5f5f5 ;
-background-position: center center;
+    background: #f5f5f5;
+    background-position: center center;
     padding: 90px 0;
-
-
 }
 
 .about-main {
@@ -406,6 +426,11 @@ background-position: center center;
     font-size: 1.5rem;
     padding-bottom: 70px;
 }
+.contact-header span{
+    display: inline-block;
+    height: 100%;
+	position:relative;
+}
 
 .contact-content {
     display: flex;
@@ -432,14 +457,6 @@ background-position: center center;
     align-items: center;
 }
 
-/* Glassmorphism card effect */
-.card {
-    backdrop-filter: blur(16px) saturate(63%);
-    -webkit-backdrop-filter: blur(16px) saturate(63%);
-    background-color: rgba(17, 25, 40, 0.74);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
 
 input[type="text"],
 input[type="email"] {
@@ -456,7 +473,7 @@ input[type="email"] {
 textarea {
     color: #444;
     outline: none;
-    width: 100%;
+    width: 80%;
     height: 28vh;
     border-style: none;
     border-radius: 4px;
@@ -564,7 +581,6 @@ footer ul li a {
 }
 
 @media screen and (max-width: 890px) {
-
     li:nth-last-of-type(3),
     li:nth-last-of-type(4),
     li:nth-last-of-type(5) {
