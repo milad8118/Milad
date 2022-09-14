@@ -418,9 +418,12 @@ background-position: center center;
     padding: 1rem 2rem;
 }
 
-,
 .contact-content form {
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .contact__information {
