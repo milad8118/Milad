@@ -12,6 +12,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Raleway", Helvetica, sans-serif;
     color: #444;
 }
