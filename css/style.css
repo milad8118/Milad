@@ -137,6 +137,7 @@ header {
 .top-menu-links {
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
 }
 
 .top-menu-nav > ul > li {
