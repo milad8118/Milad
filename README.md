@@ -1,2 +1,2 @@
-# Transit-project
-hi it's the transit template but i wrote it all by myself
+# my biography
+hi it's a page to know me,send me messages and seeing my resume
