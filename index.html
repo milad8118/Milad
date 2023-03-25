@@ -8,6 +8,7 @@
     <title>MIlad Arabmohammadi </title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -50,22 +51,22 @@
                 </div>
                 <div class="services-content">
 
-                    <div class="about-me">
-                        <i class="icon round fa-cloud move"></i>
+                    <div class="  about-me" data-aos="fade-right" data-aos-delay="100">
+                        <i class="icon round fa-cloud move" ></i>
                         <p> I was born in divandarreh city in Kordestan
                             I'm 20 years old.I'm a nurse student at Iran university of medical science in Tehran and at
                             this
                             time it's my fifth semester. I like nursing but i love coding 🙃</p>
                     </div>
-                    <div class="courses">
-                        <i class="icon round fa-laptop move"></i>
+                    <div class="courses" data-aos="fade-up" data-aos-delay="100">
+                        <i class="icon round fa-laptop move "></i>
                         <p> I wrote my first code when i was 18 and it was <code>print("hello world")</code> in python.
                             i
                             watched some other languages courses but i still was confused about what i should study,
                             Eventually i started html, css with Toplearn</p>
                     </div>
-                    <div class="the-way">
-                        <i class="icon round fa-rocket move"></i>
+                    <div class="the-way" data-aos="fade-left" data-aos-delay="100">
+                        <i class="icon round fa-rocket move "></i>
                         <p> I have passed this courses:
                             Elementary html,css by Hassan Khosrojerdi
                             General html,css by Hassan Khosrojerdi
@@ -73,6 +74,7 @@
                         </p>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -86,7 +88,7 @@
 
             <hr>
             <div class="about-main">
-                <div class="profile">
+                <div class="profile"  data-aos="flip-up">
 
                     <img src="./img/profile_placeholder.gif" alt="">
                     <h4>
@@ -94,21 +96,21 @@
                     </h4>
                     <p>Junior front-end programmer</p>
                 </div>
-                <div class="profile">
+                <div class="profile" data-aos="flip-up">
                     <img src="./img/profile_placeholder.gif" alt="">
                     <h4>
                         Milad Arabmohammadi
                     </h4>
                     <p>Junior front-end programmer</p>
                 </div>
-                <div class="profile">
+                <div class="profile" data-aos="flip-up">
                     <img src="./img/profile_placeholder.gif" alt="">
                     <h4>
                         Milad Arabmohammadi
                     </h4>
                     <p>Junior front-end programmer</p>
                 </div>
-                <div class="profile">
+                <div class="profile" data-aos="flip-up">
                     <img src="./img/profile_placeholder.gif" alt="">
                     <h4>
                         Milad Arabmohammadi
@@ -127,21 +129,21 @@
                 <button class="btn btn-orange btn-big">Lorem, ipsum dolor.</button>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" >
             <div class="contact-header">
                 <h2>Contact me
-                     <span class="move" >✉️</span>
-                     </h2>
+                    <span class="move">✉️</span>
+                </h2>
                 <p>Use the box below to send messages to me</p>
 
             </div>
-            <div class="contact-content">
+            <div class="contact-content" data-aos="zoom-in">
                 <form action="https://getform.io/f/4f01b848-4e91-480f-9b11-69656e2d6ff2" method="POST">
                     <div class="contact-input">
                         <input name="name" type="text" placeholder="Your Name">
-                        <input  name="email"  type="email" placeholder="Your Email">
+                        <input name="email" type="email" placeholder="Your Email">
                     </div>
-                    <textarea  name="message"  placeholder="Message"></textarea>
+                    <textarea name="message" placeholder="Message"></textarea>
                     <button class="btn btn-dark btn-big" type="submit" value="Submit">Send Message</button>
                 </form>
             </div>
@@ -156,6 +158,10 @@
             <li><a href="https://instagram.com/millad-mhmdi-"><i class="fa fa-instagram"></i></a></li>
         </ul>
     </footer>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
