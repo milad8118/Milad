@@ -112,8 +112,9 @@ a {
 header {
     padding: 1rem 0;
     height: 100vh;
-    background-image: url(../img/dark_tint.png), url(../img/bokeh_car_lights_bg.jpg);
+    background-image: url(../img/star-background.jpg);
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -189,7 +190,46 @@ header {
 .services-content input {
     font-size: 1.5rem;
     padding: 1rem 3rem;
-font-weight: 900;
+    font-weight: 900;
+
+}
+
+
+.UFO img {
+    display: none;
+    pointer-events: none;
+    position: relative;
+    top: -40rem;
+    left: 10rem;
+    width: 200px;
+
+}
+
+@media screen and (min-width:1200px) {
+    .UFO img {
+        display: inline;
+        float: left;
+
+    }
+}
+
+.ufo-move {
+    display: inline-block;
+    animation: ufo-move 3s infinite ease-in-out;
+}
+
+@keyframes ufo-move {
+    0% {
+        transform: translateY(4px);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(4px);
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -220,7 +260,6 @@ font-weight: 900;
 
 }
 
-.top-menu-nav button {}
 
 .banner-content p {
     font-size: 1.5rem;
@@ -316,7 +355,7 @@ font-weight: 900;
 .services-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
 }
