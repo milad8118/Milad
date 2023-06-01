@@ -18,3 +18,8 @@ typewriter.typeString('< Hi it\'s Milad')
     .typeString('< You can see my resume from the button below')
     .pauseFor(2500)
     .start();
+
+
+let docTitle = document.title;
+window.addEventListener("blur", () => { document.title = "come back ☹" })
+window.addEventListener("focus", () => { document.title = docTitle })

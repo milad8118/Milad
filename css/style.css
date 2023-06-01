@@ -64,13 +64,13 @@ a {
     background-color: #47c8f4;
 }
 
-.btn-orange {
-    background-color: #ff9900;
+.btn-dark-blue {
+    background-color: #606aa2;
     color: #fff !important;
 }
 
-.btn-orange:hover {
-    background-color: #ffca7b;
+.btn-dark-blue:hover {
+    background-color: #7a86cb;
 }
 
 .btn-dark {
